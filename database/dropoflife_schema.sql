@@ -1,0 +1,19 @@
+CREATE TABLE users (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  username TEXT NOT NULL,
+  email TEXT NOT NULL,
+  password TEXT NOT NULL
+);
+
+CREATE TABLE donors (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT NOT NULL,
+  blood_type TEXT NOT NULL
+);
+
+CREATE TABLE requests (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  requester TEXT NOT NULL,
+  blood_type TEXT NOT NULL,
+  reason TEXT
+);
