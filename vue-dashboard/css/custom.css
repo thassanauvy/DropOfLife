@@ -1,0 +1,122 @@
+/* vue-dashboard/css/custom.css */
+
+/* ----------------------------
+   ✨ General Layout
+----------------------------- */
+body {
+  background: linear-gradient(to right, #fef3c7, #fcd34d);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1f2937; /* text-gray-800 */
+  margin: 0;
+  padding: 0;
+}
+
+/* Centering main content */
+#app {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* ----------------------------
+   🔤 Titles and Headings
+----------------------------- */
+h1, h2, h3 {
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+h1 {
+  font-size: 2.25rem; /* text-3xl */
+  background: linear-gradient(to right, #ef4444, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #dc2626; /* red-600 */
+}
+
+/* ----------------------------
+   🔘 Buttons
+----------------------------- */
+button {
+  transition: all 0.2s ease-in-out;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #ef4444;
+  color: white;
+  border: none;
+}
+
+button:hover {
+  background-color: #dc2626;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(220, 38, 38, 0.2);
+}
+
+/* ----------------------------
+   ✏️ Inputs & Form Styling
+----------------------------- */
+input,
+textarea,
+select {
+  border: 1px solid #cbd5e1; /* gray-300 */
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #3b82f6; /* blue-500 */
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+/* ----------------------------
+   🧊 Cards / Panels
+----------------------------- */
+.card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* ----------------------------
+   🌫️ Animations
+----------------------------- */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fade-in-up 0.5s ease-out;
+}
+
+/* ----------------------------
+   ❤️ Thematic Styling
+----------------------------- */
+.blood-drop {
+  color: #dc2626;
+  font-size: 1.5rem;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
